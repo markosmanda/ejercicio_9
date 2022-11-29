@@ -42,7 +42,7 @@ public class Ejercicio_9 {
                     uno = true;
                     break;
                 case 4:
-                   
+
                     break;
                 default:
                     System.out.println("Error");
@@ -51,9 +51,6 @@ public class Ejercicio_9 {
             }
         } while (uno == false);
 
-        
-        
-        
         do {
             System.out.println("***************");
             devolverCadena();
@@ -85,13 +82,14 @@ public class Ejercicio_9 {
 
         } while (opcion != 4);
     }
-    public static void devolverCadena (){
-        String cadena=pedirCadena();
+
+    public static void devolverCadena() {
+        String cadena = pedirCadena();
         System.out.println(cadena);
     }
 
     public static String pedirCadena() {
-        
+        String cadena = "";
         Scanner entrada = new Scanner(System.in);
         System.out.print("Introducir nueva cadena: ");
         cadena = entrada.nextLine();
