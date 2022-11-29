@@ -78,12 +78,10 @@ public class Ejercicio_9 {
         String iniciales="";
         
         
-        //Tendríamos que depurar espacios iniciales
-        // codigo para depurar espacios o usar el trim()
         frase=frase.trim();
         
         
-        //Meto el primer caracter en mayusculas
+  
         caracter=frase.charAt(0);
         caracterMayus=Character.toUpperCase(caracter);
         resultado=resultado+caracterMayus;
@@ -92,8 +90,7 @@ public class Ejercicio_9 {
         for (int i = 1; i < frase.length(); i++) {
             
             if (frase.charAt(i-1)==' '){
-                //El caracter anterior es un espacio
-                //pongo en mayusculas el caracte actual
+          
                 caracter=frase.charAt(i);
                 caracterMayus=Character.toUpperCase(caracter);
                 resultado=resultado+caracterMayus;
@@ -109,9 +106,9 @@ public class Ejercicio_9 {
         
         
         
-        //Saco las iniciales de la frase en minusculas
+       
         System.out.println(resultado);
-        //Meto el primer caracter
+  
         iniciales=iniciales+frase.charAt(0);
         
         for (int i = 1; i < frase.length(); i++) {
